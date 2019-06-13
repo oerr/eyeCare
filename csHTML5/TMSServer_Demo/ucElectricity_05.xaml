@@ -1,0 +1,18 @@
+﻿<UserControl
+    x:Class="TMSServer.ucElectricity_05"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TMSServer">
+    
+    <Grid>
+        <Path Data="M33.863998,10.072 L25.896999,24.358 36.337002,24.358 20.952,41.390999 27.471001,27.47 17.93,27.47 z M27.471001,6.5949997 C15.959,6.5950001 6.5949998,15.958001 6.5949998,27.47 6.5949998,38.980999 15.959,48.346001 27.471001,48.346001 38.980999,48.346001 48.347,38.980999 48.347,27.47 48.347,15.958001 38.980999,6.5950001 27.471001,6.5949997 z M27.471001,0 C42.618,3.3677873E-07 54.939999,12.323 54.939999,27.47 54.939999,42.617001 42.618,54.939 27.471001,54.939 12.323,54.939 0,42.617001 0,27.47 0,12.323 12.323,3.3677873E-07 27.471001,0 z" Stretch="Fill" Margin="0">
+            <Path.Fill>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <!--<GradientStop Color="#FFED7402" Offset="0"/>-->
+                    <GradientStop Color="#FFE4231F" Offset="0.5"/>
+                    <GradientStop Color="#FF901004" Offset="1"/>
+                </LinearGradientBrush>
+            </Path.Fill>
+        </Path>
+    </Grid>
+</UserControl>

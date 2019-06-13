@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CSharpXamlForHtml5.System.Xaml.dll</name>
+    </assembly>
+    <members>
+        <member name="T:System.Windows.Markup.IProvideValueTarget">
+            <summary>
+            Represents a service that reports situational object-property relationships
+            for markup extension evaluation.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Markup.IProvideValueTarget.TargetObject">
+            <summary>
+            Gets the target object being reported.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Markup.IProvideValueTarget.TargetProperty">
+            <summary>
+            Gets an identifier for the target property being reported.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Markup.ContentPropertyAttribute">
+            <summary>
+            Indicates which property of a type is the XAML content property. A XAML processor
+            uses this information when processing XAML child elements of XAML representations
+            of the attributed type.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Markup.ContentPropertyAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the ContentPropertyAttribute class.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Markup.ContentPropertyAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the ContentPropertyAttribute class with the specified name.
+            </summary>
+            <param name="name">The name of the ContentPropertyAttribute</param>
+        </member>
+        <member name="T:System.Windows.Markup.ContentWrapperAttribute">
+            <summary>
+            Specifies one or more types on the associated collection type that will be
+            used to wrap foreign content.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Markup.ContentWrapperAttribute.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the ContentWrapperAttribute
+            class.
+            </summary>
+            <param name="contentWrapper">The System.Type that is declared as a content wrapper for the collection
+            type.</param>
+        </member>
+        <member name="M:System.Windows.Markup.ContentWrapperAttribute.Equals(System.Object)">
+            <summary>
+            Determines whether the specified ContentWrapperAttribute
+            is equivalent this ContentWrapperAttribute by comparing
+            the ContentWrapperAttribute.ContentWrapper properties.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Windows.Markup.ContentWrapperAttribute.GetHashCode">
+            <summary>
+            Gets a hash code for this instance.
+            </summary>
+            <returns>An integer hash code</returns>
+        </member>
+        <member name="P:System.Windows.Markup.ContentWrapperAttribute.ContentWrapper">
+            <summary>
+            Gets the type that is declared as a content wrapper for the collection type
+            associated with this attribute.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Markup.ContentWrapperAttribute.TypeId">
+            <summary>
+            Gets a unique identifier for this attribute.
+            </summary>
+        </member>
+        <member name="T:System.Windows.Markup.MarkupExtension">
+            <summary>
+            Provides a base class for XAML markup extension implementations that can
+            be supported by .NET Framework XAML Services and other XAML readers and XAML
+            writers.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)">
+            <summary>
+            When implemented in a derived class, returns an object that is provided as
+            the value of the target property for this markup extension.
+            </summary>
+            <param name="serviceProvider">
+            A service provider helper that can provide services for the markup extension.
+            </param>
+            <returns>The object value to set on the property where the extension is applied.</returns>
+        </member>
+        <member name="T:System.Windows.Markup.XmlnsDefinitionAttribute">
+            <summary>
+            Specifies a mapping on a per-assembly basis between a XAML namespace and
+            a CLR namespace, which is then used for type resolution by a XAML object
+            writer or XAML schema context.
+            </summary>
+        </member>
+        <member name="M:System.Windows.Markup.XmlnsDefinitionAttribute.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the System.Windows.Markup.XmlnsDefinitionAttribute
+            class.
+            </summary>
+            <param name="xmlNamespace">The XAML namespace identifier.</param>
+            <param name="clrNamespace">A string that references a CLR namespace name.</param>
+        </member>
+        <member name="P:System.Windows.Markup.XmlnsDefinitionAttribute.AssemblyName">
+            <summary>
+            Gets or sets the name of the assembly associated with the attribute.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Markup.XmlnsDefinitionAttribute.XmlNamespace">
+            <summary>
+            Gets the XAML namespace identifier specified in this attribute.
+            </summary>
+        </member>
+        <member name="P:System.Windows.Markup.XmlnsDefinitionAttribute.ClrNamespace">
+            <summary>
+            Gets the string name of the CLR namespace specified in this attribute
+            </summary>
+        </member>
+    </members>
+</doc>

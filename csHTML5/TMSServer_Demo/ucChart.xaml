@@ -1,0 +1,11 @@
+﻿<UserControl
+    x:Class="TMSServer.ucChart"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:plotly="using:CSHTML5.Extensions.Plotly"
+    xmlns:local="using:TMSServer">
+    
+    <Grid>
+        <plotly:ChartControl x:Name="m_Chart"  HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,46 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TMSServerTest" x:Class="TMSServerTest.ucSensorPannel" 
+             mc:Ignorable="d" d:DesignWidth="296" d:DesignHeight="297">
+    
+
+    <Grid>
+        <Border BorderBrush="#FF939393" BorderThickness="1" CornerRadius="15" Background="White">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="137"/>
+                    <RowDefinition Height="81"/>
+                    <RowDefinition Height="81"/>
+                </Grid.RowDefinitions>
+                <CheckBox x:Name="m_chkBox" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="18,20.06,0,0" Visibility="Collapsed"/>
+                <local:ucButton x:Name="m_ucBtnTitle" HorizontalAlignment="Center" VerticalAlignment="Top"  Text=""  TextSize="24" IsTextBold="True"  Margin="0,10,0,0"/>
+                <Grid Margin="0,56,0,0">
+                    <Grid x:Name="m_gdNOX">
+                        <local:ucSensorPannelEntry/>
+                    </Grid>
+                    <Border BorderBrush="#FFF0F0F0" BorderThickness="1" Height="1" VerticalAlignment="Bottom"/>
+                </Grid>
+                <Grid Margin="0" Grid.Row="1">
+                    <Grid x:Name="m_gdCO">
+                        <local:ucSensorPannelEntry/>
+                    </Grid>
+                    <Border BorderBrush="#FFF0F0F0" BorderThickness="1" Height="1" VerticalAlignment="Bottom"/>
+                </Grid>
+                <Grid Grid.Row="2" Margin="0">
+                    <Grid x:Name="m_gdFineDust" Margin="0,0,0,9">
+                        <local:ucSensorPannelEntry/>
+                    </Grid>
+                </Grid>
+            </Grid>
+
+        </Border>
+        <Image Stretch="Fill" Source="Img/Contents.png" Opacity="0.42" Visibility="Collapsed"/>
+
+    </Grid>
+
+
+
+</UserControl>

@@ -1,0 +1,37 @@
+﻿<ChildWindow x:Class="TMSServer.wndName"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           Height="225" Width="450" Background="White" 
+           Title=""
+           xmlns:local="using:TMSServer">
+
+    <Grid>
+        <StackPanel Margin="0,26,0,134" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBox HorizontalAlignment="Left" Margin="0" TextWrapping="Wrap" Text="이름" Width="47" FontSize="17" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" IsHitTestVisible="False" Padding="1,5,1,1"/>
+            <TextBox x:Name="m_tbxName" TextWrapping="Wrap" FontSize="17" Text="" Padding="1,5,1,1" Width="221"/>
+        </StackPanel>
+        <StackPanel Margin="0,83,0,82" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Border CornerRadius="15" HorizontalAlignment="Left" Width="100" Margin="0,0,68,0" >
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF306F94" Offset="0"/>
+                        <GradientStop Color="#FF6DAABC" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <local:ucButton x:Name="m_ucBtnOK" TextHorizentalAllignment="Center" TextVerticalAllignment="Center"  TextMargin="0,0,0,0"  Text="확 인" TextSize="17"  />
+            </Border>
+            <Border CornerRadius="15" HorizontalAlignment="Left" Width="100" >
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF306F94" Offset="0.016"/>
+                        <GradientStop Color="#FF6DAABC" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <local:ucButton x:Name="m_ucBtnCancel" TextHorizentalAllignment="Center" TextVerticalAllignment="Center"  TextMargin="0,0,0,0"  Text="취 소" TextSize="17"  />
+            </Border>
+        </StackPanel>
+        <TextBox HorizontalAlignment="Center" Height="26" Margin="0,140,0,0" TextWrapping="Wrap" Text="※ 센서에서도 해당 이름에 대한 데이터를 전송해야 합니다." VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" IsHitTestVisible="False"/>
+    </Grid>
+
+
+</ChildWindow>

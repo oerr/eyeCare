@@ -1,0 +1,142 @@
+﻿<UserControl
+    x:Class="TMSServer.ucHistory"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TMSServer">
+
+    <UserControl.Resources>
+    </UserControl.Resources>
+
+    <!-- ucHistory -> ucChart -> ChartControl 구조로 됨 아래 <local:ucChart 검색 항상 이런속성으로.. -->
+    <!-- <local:ucChart x:Name="m_ChartNOX" HorizontalAlignment="Center"  VerticalAlignment="Center" ></local:ucChart> -->
+
+    <Grid>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF306F94" Offset="0"/>
+                    <GradientStop Color="#FF6DAABC" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="204"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Border x:Name="bdTop" Margin="63,38,63,18" CornerRadius="20" Background="White">
+                    <Grid>
+                        <Image HorizontalAlignment="Left" Height="129.667" VerticalAlignment="Top" Width="128" Margin="13,12,0,0" Source="Img/Logo_1.png"/>
+                        <Grid Margin="146,0,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="248"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Margin="0">
+                                <TextBox Text="센서 A지역" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="40" IsHitTestVisible="False" BorderThickness="0" AllowDrop="False" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="#FF194761"/>
+                            </Grid>
+                            <Grid Grid.Column="1" Margin="0">
+                                <WrapPanel Margin="0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Width="237.609" Margin="0">
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="87.526">
+                                            <TextBox Text="2018" FontSize="20" Foreground="#FF194761" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" HorizontalAlignment="Left" Width="55.263" Margin="0" />
+                                            <TextBox Text="년" FontSize="20" Foreground="#FF194761" Background="{x:Null}" BorderBrush="{x:Null}"  IsHitTestVisible="False" BorderThickness="0" HorizontalAlignment="Left" Width="27.763" Margin="0" />
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="63.526">
+                                            <TextBox Text="01" FontSize="20" Foreground="#FF194761" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" HorizontalAlignment="Left" Width="31.263" Margin="0" />
+                                            <TextBox Text="월" FontSize="20" Foreground="#FF194761" Background="{x:Null}" BorderBrush="{x:Null}"  IsHitTestVisible="False" BorderThickness="0" HorizontalAlignment="Left" Width="25.763" Margin="0" />
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="84.026">
+                                            <TextBox Text="24" FontSize="20" Foreground="#FF194761" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" HorizontalAlignment="Left" Width="36.763" Margin="0" />
+                                            <TextBox Text="일 ~" FontSize="20" Foreground="#FF194761" Background="{x:Null}" BorderBrush="{x:Null}"  IsHitTestVisible="False" BorderThickness="0" HorizontalAlignment="Left" Width="42.263" Margin="0" />
+                                        </StackPanel>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Width="219.609" Margin="0,0,5,0">
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="87.526">
+                                            <TextBox Text="2018" FontSize="20" Foreground="#FF194761" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" HorizontalAlignment="Left" Width="55.263" Margin="0" />
+                                            <TextBox Text="년" FontSize="20" Foreground="#FF194761" Background="{x:Null}" BorderBrush="{x:Null}"  IsHitTestVisible="False" BorderThickness="0" HorizontalAlignment="Left" Width="27.763" Margin="0" />
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="63.526">
+                                            <TextBox Text="01" FontSize="20" Foreground="#FF194761" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" HorizontalAlignment="Left" Width="31.263" Margin="0" />
+                                            <TextBox Text="월" FontSize="20" Foreground="#FF194761" Background="{x:Null}" BorderBrush="{x:Null}"  IsHitTestVisible="False" BorderThickness="0" HorizontalAlignment="Left" Width="25.763" Margin="0" />
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="69.026">
+                                            <TextBox Text="24" FontSize="20" Foreground="#FF194761" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" HorizontalAlignment="Left" Width="36.763" Margin="0" />
+                                            <TextBox Text="일" FontSize="20" Foreground="#FF194761" Background="{x:Null}" BorderBrush="{x:Null}"  IsHitTestVisible="False" BorderThickness="0" HorizontalAlignment="Left" Width="27.263" Margin="0" />
+                                        </StackPanel>
+                                    </StackPanel>
+                                    <Border Background="#FF92B3BC" CornerRadius="15" HorizontalAlignment="Left" Width="83" Height="31.61" >
+                                        <local:ucButton x:Name="m_ucBtnSearch"  TextHorizentalAllignment="Center" TextVerticalAllignment="Center"  TextMargin="0,5,0,0"  Text="검 색" TextSize="17"  />
+                                    </Border>
+                                </WrapPanel>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Border>
+            </Grid>
+            <Grid x:Name="m_gdMain" Grid.Row="1" Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="25"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="63"/>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="63"/>
+                </Grid.ColumnDefinitions>
+                <Border x:Name="m_bdList" CornerRadius="20" Background="White" Margin="0" Grid.RowSpan="3" Grid.Column="1">
+                    <ScrollViewer  Margin="20" VerticalScrollBarVisibility="Auto"   >
+                        <DataGrid Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" />
+                    </ScrollViewer>
+                </Border>
+                <Border x:Name="m_bdNOX" CornerRadius="20" Background="White" Margin="0" Grid.Column="3">
+                    <Grid>
+                        <Grid x:Name="m_gdNOX">
+                            <local:ucChart x:Name="m_ChartNOX" HorizontalAlignment="Center"  VerticalAlignment="Center" ></local:ucChart>
+                        </Grid>
+                        <Border BorderBrush="#FFEEEEEE" BorderThickness="1" HorizontalAlignment="Left" Width="100" Margin="20,20,0,15" CornerRadius="10" VerticalAlignment="Top">
+                            <TextBox TextWrapping="Wrap" Text="NOX" Foreground="#FF27688C" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False" FontSize="20" BorderThickness="0"/>
+                        </Border>
+                    </Grid>
+                </Border>
+                <Border x:Name="m_bdCO" CornerRadius="20" Background="White" Grid.Column="5">
+                    <Grid>
+                        <Grid x:Name="m_gdCO"/>
+                        <Border BorderBrush="#FFEEEEEE" BorderThickness="1" HorizontalAlignment="Left" Width="100" Margin="20,20,0,15" CornerRadius="10" VerticalAlignment="Top">
+                            <TextBox TextWrapping="Wrap" Text="CO" Foreground="#FF27688C" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False" FontSize="20" BorderThickness="0"/>
+                        </Border>
+                    </Grid>
+                </Border>
+                <Border x:Name="m_bdCO2" CornerRadius="20" Background="White" Grid.Column="3" Margin="0" Grid.Row="2">
+                    <Grid>
+                        <Grid x:Name="m_gdCO2"/>
+                        <Border BorderBrush="#FFEEEEEE" BorderThickness="1" HorizontalAlignment="Left" Width="100" Margin="20,20,0,15" CornerRadius="10" VerticalAlignment="Top">
+                            <TextBox TextWrapping="Wrap" Text="CO2" Foreground="#FF27688C" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False" FontSize="20" BorderThickness="0"/>
+                        </Border>
+                    </Grid>
+                </Border>
+                <Border x:Name="m_bdFineDust" CornerRadius="20" Background="White" Grid.Column="5" Margin="0" Grid.Row="2">
+                    <Grid>
+                        <Grid x:Name="m_gdFineDust"/>
+                        <Border BorderBrush="#FFEEEEEE" BorderThickness="1" HorizontalAlignment="Left" Width="100" Margin="20,20,0,15" CornerRadius="10" VerticalAlignment="Top">
+                            <TextBox TextWrapping="Wrap" Text="미세먼지" Foreground="#FF27688C" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False" FontSize="20" BorderThickness="0"/>
+                        </Border>
+                    </Grid>
+                </Border>
+            </Grid>
+
+        </Grid>
+        <Image Source="Img/History.png" Stretch="Fill" Opacity="0.55" Visibility="Collapsed"/>
+
+        <!--<Image Source="Img/Main.png" Stretch="Fill" VerticalAlignment="Top" Margin="0" HorizontalAlignment="Center" Width="1280" Height="960" OpacityMask="#4C000000"/>-->
+
+    </Grid>
+    
+    
+
+</UserControl>

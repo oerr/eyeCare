@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E94D72B-6543-4729-BB69-717958998C72}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TMSServerTest</RootNamespace>
+    <AssemblyName>TMSServerTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ExpressionBlendVersion>12.0.60617.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="Microsoft.Expression.Controls" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls" />
+    <Reference Include="Telerik.Windows.Controls.ImageEditor" />
+    <Reference Include="Telerik.Windows.Controls.Input" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ucButton.xaml.cs">
+      <DependentUpon>ucButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucChangePwd.xaml.cs">
+      <DependentUpon>ucChangePwd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucCO2_01.xaml.cs">
+      <DependentUpon>ucCO2_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucCO2_02.xaml.cs">
+      <DependentUpon>ucCO2_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucCO2_03.xaml.cs">
+      <DependentUpon>ucCO2_03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucCO2_04.xaml.cs">
+      <DependentUpon>ucCO2_04.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucCO2_05.xaml.cs">
+      <DependentUpon>ucCO2_05.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucCO_01.xaml.cs">
+      <DependentUpon>ucCO_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucCO_02.xaml.cs">
+      <DependentUpon>ucCO_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucCO_03.xaml.cs">
+      <DependentUpon>ucCO_03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucCO_04.xaml.cs">
+      <DependentUpon>ucCO_04.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucCO_05.xaml.cs">
+      <DependentUpon>ucCO_05.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucElectricity_05.xaml.cs">
+      <DependentUpon>ucElectricity_05.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucFineDust_01.xaml.cs">
+      <DependentUpon>ucFineDust_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucFineDust_02.xaml.cs">
+      <DependentUpon>ucFineDust_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucFineDust_03.xaml.cs">
+      <DependentUpon>ucFineDust_03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucFineDust_04.xaml.cs">
+      <DependentUpon>ucFineDust_04.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucFineDust_05.xaml.cs">
+      <DependentUpon>ucFineDust_05.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucFuel_04.xaml.cs">
+      <DependentUpon>ucFuel_04.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucHistory.xaml.cs">
+      <DependentUpon>ucHistory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucHumidity_01.xaml.cs">
+      <DependentUpon>ucHumidity_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucHumidity_02.xaml.cs">
+      <DependentUpon>ucHumidity_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucHumidity_03.xaml.cs">
+      <DependentUpon>ucHumidity_03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucHumidity_04.xaml.cs">
+      <DependentUpon>ucHumidity_04.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucHumidity_05.xaml.cs">
+      <DependentUpon>ucHumidity_05.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucLevel_01.xaml.cs">
+      <DependentUpon>ucLevel_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucLogin.xaml.cs">
+      <DependentUpon>ucLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucMain.xaml.cs">
+      <DependentUpon>ucMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucNOX_01.xaml.cs">
+      <DependentUpon>ucNOX_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucNOX_02.xaml.cs">
+      <DependentUpon>ucNOX_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucNOX_03.xaml.cs">
+      <DependentUpon>ucNOX_03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucNOX_04.xaml.cs">
+      <DependentUpon>ucNOX_04.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucNOX_05.xaml.cs">
+      <DependentUpon>ucNOX_05.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucPressure05.xaml.cs">
+      <DependentUpon>ucPressure05.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucSensorPannel.xaml.cs">
+      <DependentUpon>ucSensorPannel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucSensorPannelEntry.xaml.cs">
+      <DependentUpon>ucSensorPannelEntry.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucTemperature_01.xaml.cs">
+      <DependentUpon>ucTemperature_01.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucTemperature_02.xaml.cs">
+      <DependentUpon>ucTemperature_02.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucTemperature_03.xaml.cs">
+      <DependentUpon>ucTemperature_03.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucTemperature_04.xaml.cs">
+      <DependentUpon>ucTemperature_04.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucTemperature_05.xaml.cs">
+      <DependentUpon>ucTemperature_05.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucTGChart.xaml.cs">
+      <DependentUpon>ucTGChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="wndName.xaml.cs">
+      <DependentUpon>wndName.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucChangePwd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucCO2_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucCO2_02.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucCO2_03.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucCO2_04.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucCO2_05.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucCO_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucCO_02.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucCO_03.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucCO_04.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucCO_05.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucElectricity_05.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucFineDust_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucFineDust_02.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucFineDust_03.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucFineDust_04.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucFineDust_05.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucFuel_04.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucHistory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucHumidity_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucHumidity_02.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucHumidity_03.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucHumidity_04.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucHumidity_05.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucLevel_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucNOX_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucNOX_02.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucNOX_03.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucNOX_04.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucNOX_05.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucPressure05.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucSensorPannel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucSensorPannelEntry.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucTemperature_01.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucTemperature_02.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucTemperature_03.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucTemperature_04.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucTemperature_05.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucTGChart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="wndName.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Img\상태아이콘-압력-정상.ai" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\Button_01.png" />
+    <Resource Include="Img\Button_02.png" />
+    <Resource Include="Img\Login_Back.png" />
+    <Resource Include="Img\Login_Temp.png" />
+    <Resource Include="Img\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\Main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\Logo_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\ValueStatus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\Contents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\ContentsEntry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\finedust.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\CO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\History.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\CO_01.png" />
+    <Resource Include="Img\CO_02.png" />
+    <Resource Include="Img\CO_03.png" />
+    <Resource Include="Img\CO_04.png" />
+    <Resource Include="Img\CO_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\FineDust_01.png" />
+    <Resource Include="Img\FineDust_02.png" />
+    <Resource Include="Img\FineDust_03.png" />
+    <Resource Include="Img\FineDust_04.png" />
+    <Resource Include="Img\FineDust_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\NOX_01.png" />
+    <Resource Include="Img\NOX_02.png" />
+    <Resource Include="Img\NOX_03.png" />
+    <Resource Include="Img\NOX_04.png" />
+    <Resource Include="Img\NOX_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\상태아이콘-레벨-경계.png" />
+    <Resource Include="Img\상태아이콘-레벨-관리.png" />
+    <Resource Include="Img\상태아이콘-레벨-심각1안.png" />
+    <Resource Include="Img\상태아이콘-레벨-정상.png" />
+    <Resource Include="Img\상태아이콘-레벨-주의.png" />
+    <Resource Include="Img\상태아이콘-습도-경계.png" />
+    <Resource Include="Img\상태아이콘-습도-관리.png" />
+    <Resource Include="Img\상태아이콘-습도-심각1안.png" />
+    <Resource Include="Img\상태아이콘-습도-정상.png" />
+    <Resource Include="Img\상태아이콘-습도-주의.png" />
+    <Resource Include="Img\상태아이콘-압력-경계.png" />
+    <Resource Include="Img\상태아이콘-압력-관리.png" />
+    <Resource Include="Img\상태아이콘-압력-심각1안.png" />
+    <Resource Include="Img\상태아이콘-압력-주의.png" />
+    <Resource Include="Img\상태아이콘-연료-경계.png" />
+    <Resource Include="Img\상태아이콘-연료-관리.png" />
+    <Resource Include="Img\상태아이콘-연료-심각1안.png" />
+    <Resource Include="Img\상태아이콘-연료-심각2안.png" />
+    <Resource Include="Img\상태아이콘-연료-정상.png" />
+    <Resource Include="Img\상태아이콘-연료-주의.png" />
+    <Resource Include="Img\상태아이콘-온도-경계.png" />
+    <Resource Include="Img\상태아이콘-온도-관리.png" />
+    <Resource Include="Img\상태아이콘-온도-심각1안.png" />
+    <Resource Include="Img\상태아이콘-온도-정상.png" />
+    <Resource Include="Img\상태아이콘-온도-주의.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

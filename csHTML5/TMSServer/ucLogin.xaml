@@ -1,0 +1,63 @@
+﻿<UserControl
+    x:Class="TMSServer.ucLogin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:TMSServer">
+
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="249"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF317092" Offset="0"/>
+                        <GradientStop Color="#FFB7C6CF" Offset="1"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <Image HorizontalAlignment="Center" Height="198.667" VerticalAlignment="Top" Width="194" Margin="0,44.337,0,0" Source="Img/Logo.png" Stretch="Fill"/>
+            </Grid>
+            <Grid Grid.Row="1" Background="White">
+                <Border HorizontalAlignment="Center" Height="229" VerticalAlignment="Top" Width="644.5" Margin="0,132,0,0" CornerRadius="5" BorderBrush="#FFB8B8B8" BorderThickness="1" Background="White">
+                    <Border.Effect>
+                        <DropShadowEffect Color="#FFC7C7C7"/>
+                    </Border.Effect>
+                </Border>
+                <Grid Margin="0,132,0,0" Width="644.5" Height="229" HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="423"/>
+                        <ColumnDefinition Width="85"/>
+                        <ColumnDefinition Width="7"/>
+                        <ColumnDefinition Width="85"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="72"/>
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="42"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="아이디" VerticalAlignment="Top" Margin="50,10,0,0" Grid.Row="1" Height="25" Width="61.43" FontSize="18" Foreground="#FF646464" FontWeight="Bold"/>
+                    <TextBox x:Name="m_tbxID" HorizontalAlignment="Left" Height="37.75" VerticalAlignment="Center" Width="259.5" Margin="131.5,0,0,0" Grid.Row="1" FontSize="18" Padding="1,5,1,1" IsEnabled="False" Text="Root" Background="#FF8F8F8F"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="비밀번호" VerticalAlignment="Top" Margin="44,7,0,0" Grid.Row="2" Height="25" Width="78.43" FontSize="18" Foreground="#FF646464" FontWeight="Bold"/>
+                    <PasswordBox x:Name="m_pbxPWD" HorizontalAlignment="Left" Height="37.75"  VerticalAlignment="Top" Width="262" Margin="131.5,3.75,0,0" Grid.Row="2" FontSize="18" Padding="1,-3,1,1" VerticalContentAlignment="Center"/>
+                    <local:ucButton IsShadow="True"  TextHorizentalAllignment="Center" TextVerticalAllignment="Center"  TextMargin="0,0,0,0" TextSize="15" Text="확 인" x:Name="m_ucBtnOK" Margin="0" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" />
+                    <local:ucButton IsShadow="True"  TextHorizentalAllignment="Center" TextVerticalAllignment="Center"  TextMargin="0,0,0,0" TextSize="15" Text="비밀번호&#xD;&#xA;    변경" x:Name="m_ucBtnChangePwd" Margin="0" Grid.RowSpan="2" Grid.Column="3" Grid.Row="1" />
+                </Grid>
+                <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="※ 초기 비밀번호는 11223344 입니다. 변경하여 사용 하시기 바랍니다." VerticalAlignment="Top" Margin="0,377,0,0" Height="46" Width="585.93" FontSize="18" Foreground="#FF646464" FontWeight="Bold"/>
+
+            </Grid>
+        </Grid>
+
+        <!--<Image Source="img/Login_Temp.png" Stretch="Fill" VerticalAlignment="Top" Margin="0" HorizontalAlignment="Center" Width="1280" Height="960" OpacityMask="#60000000" Visibility="Collapsed"/>-->
+
+    </Grid>
+
+
+
+
+
+
+</UserControl>

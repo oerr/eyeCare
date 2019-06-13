@@ -1,0 +1,390 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CSharpXamlForHtml5.System.ServiceModel.dll</name>
+    </assembly>
+    <members>
+        <member name="T:System.ServiceModel.Channels.AddressHeader">
+            <summary>
+            Represents a header that encapsulates an address information item used to
+            identify or interact with an endpoint.
+            </summary>
+        </member>
+        <member name="T:System.ServiceModel.Channels.Binding">
+            <summary>
+            Contains the binding elements that specify the protocols, transports, and
+            message encoders used for communication between clients and services.
+            </summary>
+        </member>
+        <member name="T:System.ServiceModel.BasicHttpBinding">
+            <summary>
+            Represents a binding that a Windows Communication Foundation (WCF) service
+            can use to configure and expose endpoints that are able to communicate with
+            ASMX-based Web services and clients and other services that conform to the
+            WS-I Basic Profile 1.1.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.HttpBindingBase.MaxBufferPoolSize">
+            Returns:
+                The maximum amount of memory, in bytes, that is allocated for use by the
+                manager of the message buffers that receive messages from the channel.
+            <summary>
+            Gets or sets the maximum amount of memory, in bytes, that is allocated for
+            use by the manager of the message buffers that receive messages from the
+            channel.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.HttpBindingBase.MaxBufferSize">
+            Returns:
+                The maximum size, in bytes, for a buffer that receives messages from the
+                channel.
+            <summary>
+            Gets or sets the maximum size, in bytes, for a buffer that receives messages
+            from the channel.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize">
+            Returns:
+                The maximum size, in bytes, for a message that can be received on a channel
+                configured with this binding.
+            <summary>
+            Gets or sets the maximum size, in bytes, for a message that can be received
+            on a channel configured with this binding.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.HttpBindingBase.AllowCookies">
+            <summary>
+            Gets or sets a value that indicates whether the client accepts cookies and
+            propagates them on future requests.
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.BasicHttpBinding.#ctor">
+            <summary>
+            Initializes a new instance of the System.ServiceModel.BasicHttpBinding class.
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.BasicHttpBinding.#ctor(System.ServiceModel.BasicHttpSecurityMode)">
+            <summary>
+            Initializes a new instance of the System.ServiceModel.BasicHttpBinding class
+            with a specified type of security used by the binding.
+            </summary>
+            <param name="securityMode">
+            The value of System.ServiceModel.BasicHttpSecurityMode that specifies the
+            type of security that is used with the SOAP message and for the client.
+            </param>
+        </member>
+        <member name="P:System.ServiceModel.BasicHttpBinding.Security">
+            <summary>
+            Gets the type of security used with this binding.
+            </summary>
+        </member>
+        <member name="T:System.ServiceModel.BasicHttpSecurity">
+            <summary>
+            Configures the security settings of a basicHttpBinding binding.
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.BasicHttpSecurity.#ctor">
+            <summary>
+            Initializes a new instance of the System.ServiceModel.BasicHttpSecurity class.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.BasicHttpSecurity.Mode">
+            <summary>
+            Gets or sets the security mode for a basicHttpBinding binding.
+            </summary>
+        </member>
+        <member name="T:System.ServiceModel.BasicHttpSecurityMode">
+            <summary>
+            Specifies the types of security that can be used with the system-provided
+            System.ServiceModel.BasicHttpBinding.
+            </summary>
+        </member>
+        <member name="F:System.ServiceModel.BasicHttpSecurityMode.None">
+            <summary>
+            The SOAP message is not secured during transfer. This is the default behavior.
+            </summary>
+        </member>
+        <member name="F:System.ServiceModel.BasicHttpSecurityMode.Transport">
+            <summary>
+            Security is provided using HTTPS. The service must be configured with SSL
+            certificates. The SOAP message is protected as a whole using HTTPS. The service
+            is authenticated by the client using the service’s SSL certificate. The client
+            authentication is controlled through the System.ServiceModel.HttpTransportSecurity.ClientCredentialType.
+            </summary>
+        </member>
+        <member name="T:System.ServiceModel.EndpointAddress">
+            <summary>
+            Provides a unique network address that a client uses to communicate with
+            a service endpoint.
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.EndpointAddress.#ctor(System.Uri,System.ServiceModel.Channels.AddressHeader[])">
+            <summary>
+            Initializes a new instance of the System.ServiceModel.EndpointAddress class
+            with a specified URI and headers.
+            </summary>
+            <param name="uri">The System.Uri that identifies the endpoint location.</param>
+            <param name="addressHeaders">
+            The System.Array of type System.ServiceModel.Channels.AddressHeader that
+            contains address information used to interact with the endpoint.
+            </param>
+        </member>
+        <member name="T:System.ServiceModel.FaultException">
+            <summary>
+            Represents a SOAP fault.
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.FaultException.#ctor">
+            <summary>
+            Initializes a new instance of the System.ServiceModel.FaultException class.
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.FaultException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the System.ServiceModel.FaultException class
+            with the specified fault reason.
+            </summary>
+            <param name="reason">The reason for the fault.</param>
+        </member>
+        <member name="P:System.ServiceModel.FaultException.Message">
+            <summary>
+            Gets the message for the exception.
+            </summary>
+        </member>
+        <member name="T:System.ServiceModel.IClientChannel">
+            <summary>
+            Defines the behavior of outbound request and request/reply channels used
+            by client applications.
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.IClientChannel.BeginDisplayInitializationUI(System.AsyncCallback,System.Object)">
+            <summary>
+            An asynchronous call to begin using a user interface to obtain credential
+            information.
+            </summary>
+            <param name="callback">The method that is called when this method completes.</param>
+            <param name="state">Information about the state of the channel.</param>
+            <returns>The System.IAsyncResult to use to call back when processing has completed.</returns>
+        </member>
+        <member name="M:System.ServiceModel.IClientChannel.DisplayInitializationUI">
+            <summary>
+            A call to a user interface to obtain credential information.
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.IClientChannel.EndDisplayInitializationUI(System.IAsyncResult)">
+            <summary>
+            Called when the call to System.ServiceModel.IClientChannel.BeginDisplayInitializationUI(System.AsyncCallback,System.Object)
+            has finished.
+            </summary>
+            <param name="result">The System.IAsyncResult.</param>
+        </member>
+        <member name="P:System.ServiceModel.IClientChannel.AllowInitializationUI">
+            <summary>
+            Gets or sets a value indicating whether System.ServiceModel.IClientChannel.DisplayInitializationUI()
+            attempts to call the System.ServiceModel.Dispatcher.IInteractiveChannelInitializer
+            objects in the System.ServiceModel.Dispatcher.ClientRuntime.InteractiveChannelInitializers
+            property or throws if that collection is not empty.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.IClientChannel.DidInteractiveInitialization">
+            <summary>
+            Gets a value indicating whether a call was done to a user interface to obtain
+            credential information.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.IClientChannel.Via">
+            <summary>
+            Gets the URI that contains the transport address to which messages are sent
+            on the client channel.
+            </summary>
+        </member>
+        <member name="T:System.ServiceModel.MessageBodyMemberAttribute">
+            <summary>
+            Specifies that a member is serialized as an element inside the SOAP body.
+            </summary>
+        </member>
+        <member name="T:System.ServiceModel.MessageContractMemberAttribute">
+            <summary>
+            Declares the base members for System.ServiceModel.MessageBodyMemberAttribute
+            and System.ServiceModel.MessageHeaderAttribute.
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.MessageContractMemberAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the System.ServiceModel.MessageContractMemberAttribute
+            class.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.MessageContractMemberAttribute.HasProtectionLevel">
+            <summary>
+            When overridden in a derived class, gets a value that indicates whether the
+            member has a protection level assigned.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.MessageContractMemberAttribute.Name">
+            <summary>
+            Specifies the name of the element that corresponds to this member.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.MessageContractMemberAttribute.Namespace">
+            <summary>
+            Specifies the namespace of the element that corresponds to this member.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel">
+            <summary>
+            Specifies whether the member is to be transmitted as-is, signed, or signed
+            and encrypted.
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.MessageBodyMemberAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the System.ServiceModel.MessageBodyMemberAttribute
+            class.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.MessageBodyMemberAttribute.Order">
+            <summary>
+            Gets or sets a value that indicates the position in which the member is serialized
+            into the SOAP body.
+            </summary>
+        </member>
+        <member name="T:System.ServiceModel.MessageContractAttribute">
+            <summary>
+            Defines a strongly-typed class that corresponds to a SOAP message.
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.MessageContractAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the System.ServiceModel.MessageContractAttribute
+            class.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.MessageContractAttribute.HasProtectionLevel">
+            <summary>
+            Gets a value that indicates whether the message has a protection level.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.MessageContractAttribute.IsWrapped">
+            <summary>
+            Gets or sets a value that specifies whether the message body has a wrapper
+            element.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.MessageContractAttribute.ProtectionLevel">
+            <summary>
+            Gets or sets a value that specified whether the message must be encrypted,
+            signed, or both.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.MessageContractAttribute.WrapperName">
+            <summary>
+            Gets or sets the name of the wrapper element of the message body.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.MessageContractAttribute.WrapperNamespace">
+            <summary>
+            Gets or sets the namespace of the message body wrapper element.
+            </summary>
+        </member>
+        <member name="T:System.ServiceModel.OperationContractAttribute">
+            <summary>
+            Indicates that a method defines an operation that is part of a service contract
+            in a Windows Communication Foundation (WCF) application.
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.OperationContractAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the System.ServiceModel.OperationContractAttribute
+            class.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.OperationContractAttribute.Action">
+            <summary>
+            Gets or sets the WS-Addressing action of the request message.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:System.ServiceModel.OperationContractAttribute.AsyncPattern" -->
+        <member name="P:System.ServiceModel.OperationContractAttribute.IsOneWay">
+            <summary>
+            Gets or sets a value that indicates whether an operation returns a reply
+            message.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.OperationContractAttribute.Name">
+            <summary>
+            Gets or sets the name of the operation.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.OperationContractAttribute.ReplyAction">
+            <summary>
+            Gets or sets the value of the SOAP action for the reply message of the operation.
+            </summary>
+        </member>
+        <member name="T:OperationFormatStyle">
+            <summary>
+            Represents the SOAP style that determines how the WSDL metadata for the service
+            is formatted.
+            </summary>
+        </member>
+        <member name="F:OperationFormatStyle.Document">
+            <summary>
+            Causes the WSDL representation to contain a single element that represents the document that is exchanged for the operation.
+            </summary>
+        </member>
+        <member name="F:OperationFormatStyle.Rpc">
+            <summary>
+            Causes the WSDL representation of messages exchanged for an operation and
+            contains parameters as if it were a remote procedure call.
+            </summary>
+        </member>
+        <member name="T:System.ServiceModel.OperationFormatUse">
+            <summary>
+            Determines the format of the message.
+            </summary>
+        </member>
+        <member name="F:System.ServiceModel.OperationFormatUse.Literal">
+            <summary>
+            Implies that the message is a literal instance of the schema in the WSDL.
+            </summary>
+        </member>
+        <member name="F:System.ServiceModel.OperationFormatUse.Encoded">
+            <summary>
+            Implies that the schemas in the WSDL are abstract specifications that are
+            encoded according to the rules found in SOAP 1.1 section 5.
+            </summary>
+        </member>
+        <member name="T:System.ServiceModel.ServiceContractAttribute">
+            <summary>
+            Indicates that an interface or a class defines a service contract in a Windows
+            Communication Foundation (WCF) application.
+            </summary>
+        </member>
+        <member name="M:System.ServiceModel.ServiceContractAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the System.ServiceModel.ServiceContractAttribute
+            class.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.ServiceContractAttribute.CallbackContract">
+            <summary>
+            Gets or sets the type of callback contract when the contract is a duplex
+            contract.
+            </summary>
+        </member>
+        <member name="P:System.ServiceModel.ServiceContractAttribute.ConfigurationName">
+            <summary>
+            The name used to locate the service element in an application configuration
+            file. The default is the name of the service implementation class.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:System.ServiceModel.ServiceContractAttribute.Name" -->
+        <!-- Badly formed XML comment ignored for member "P:System.ServiceModel.ServiceContractAttribute.Namespace" -->
+        <member name="P:System.ServiceModel.XmlSerializerFormatAttribute.Use">
+            <summary>
+            Gets or sets a value that specifies the format to use. The default is
+            System.ServiceModel.OperationFormatUse.Literal.
+            </summary>
+        </member>
+    </members>
+</doc>

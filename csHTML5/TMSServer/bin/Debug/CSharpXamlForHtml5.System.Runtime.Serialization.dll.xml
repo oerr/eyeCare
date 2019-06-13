@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CSharpXamlForHtml5.System.Runtime.Serialization.dll</name>
+    </assembly>
+    <members>
+        <member name="T:System.Runtime.Serialization.KnownTypeAttribute">
+            <summary>
+            Specifies types that should be recognized by the System.Runtime.Serialization.DataContractSerializer
+            when serializing or deserializing a given type.
+            </summary>
+        </member>
+        <member name="M:System.Runtime.Serialization.KnownTypeAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the System.Runtime.Serialization.KnownTypeAttribute
+            class with the name of a method that returns an System.Collections.IEnumerable
+            of known types.
+            </summary>
+        </member>
+        <member name="M:System.Runtime.Serialization.KnownTypeAttribute.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the System.Runtime.Serialization.KnownTypeAttribute
+            class with the specified type.
+            </summary>
+            <param name="type">
+            The System.Type that is included as a known type when serializing or deserializing
+            data.
+            </param>
+        </member>
+        <member name="M:System.Runtime.Serialization.KnownTypeAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the System.Runtime.Serialization.KnownTypeAttribute
+            class with the name of a method that returns an System.Collections.IEnumerable
+            of known types.
+            </summary>
+            <param name="methodName">
+            The name of the method that returns an System.Collections.IEnumerable of
+            types used when serializing or deserializing data.
+            </param>
+        </member>
+        <member name="P:System.Runtime.Serialization.KnownTypeAttribute.MethodName">
+            Returns:
+                A System.String that contains the name of the method on the type defined
+                by the System.Runtime.Serialization.KnownTypeAttribute class.
+            <summary>
+            Gets the name of a method that will return a list of types that should be
+            recognized during serialization or deserialization.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.Serialization.KnownTypeAttribute.Type">
+            Returns:
+                The System.Type that is used during serialization or deserialization.
+            <summary>
+            Gets the type that should be recognized during serialization or deserialization
+            by the System.Runtime.Serialization.DataContractSerializer.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.Serialization.CollectionDataContractAttribute">
+            <summary>
+            When applied to a collection type, enables custom specification of the collection
+            item elements. This attribute can be applied only to types that are recognized
+            by the System.Runtime.Serialization.DataContractSerializer as valid, serializable
+            collections.
+            </summary>
+        </member>
+        <member name="M:System.Runtime.Serialization.CollectionDataContractAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the System.Runtime.Serialization.CollectionDataContractAttribute
+            class.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.Serialization.CollectionDataContractAttribute.IsReference">
+            <summary>
+            Gets or sets a value that indicates whether to preserve object reference
+            data.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName">
+            <summary>
+            Gets or sets a custom name for a collection element.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.Serialization.CollectionDataContractAttribute.KeyName">
+            <summary>
+            Gets or sets the custom name for a dictionary key name.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.Serialization.CollectionDataContractAttribute.Name">
+            <summary>
+            Gets or sets the data contract name for the collection type.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.Serialization.CollectionDataContractAttribute.Namespace">
+            <summary>
+            Gets or sets the namespace for the data contract.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.Serialization.CollectionDataContractAttribute.ValueName">
+            <summary>
+            Gets or sets the custom name for a dictionary value name.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.Serialization.DataContractAttribute">
+            <summary>
+            Specifies that the type defines or implements a data contract and is serializable
+            by a serializer, such as the System.Runtime.Serialization.DataContractSerializer.
+            To make their type serializable, type authors must define a data contract
+            for their type.
+            </summary>
+        </member>
+        <member name="M:System.Runtime.Serialization.DataContractAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the DataContractAttribute
+            class.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.Serialization.DataContractAttribute.IsReference">
+            <summary>
+            Gets or sets a value that indicates whether to preserve object reference
+            data.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.Serialization.DataContractAttribute.Name">
+            <summary>
+            Gets or sets the name of the data contract for the type.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.Serialization.DataContractAttribute.Namespace">
+            <summary>
+            Gets or sets the namespace for the data contract for the type.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.Serialization.EnumMemberAttribute">
+            <summary>
+            Specifies that the field is an enumeration member and should be serialized.
+            </summary>
+        </member>
+        <member name="M:System.Runtime.Serialization.EnumMemberAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the System.Runtime.Serialization.EnumMemberAttribute
+            class.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.Serialization.EnumMemberAttribute.Value">
+            Returns:
+                The value associated with the enumeration member.
+            <summary>
+            Gets or sets the value associated with the enumeration member the attribute
+            is applied to.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.Serialization.ExtensionDataObject">
+            <summary>
+            Stores data from a versioned data contract that has been extended by adding
+            new members.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.Serialization.IExtensibleDataObject">
+            <summary>
+            Provides a data structure to store extra data encountered by the System.Runtime.Serialization.XmlObjectSerializer
+            during deserialization of a type marked with the System.Runtime.Serialization.DataContractAttribute
+            attribute.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData">
+            <summary>
+            Gets or sets the structure that contains extra data.
+            </summary>
+        </member>
+        <member name="T:System.Runtime.Serialization.DataMemberAttribute">
+            <summary>
+            When applied to the member of a type, specifies that the member is part of
+            a data contract and is serializable by the DataContractSerializer.
+            </summary>
+        </member>
+        <member name="M:System.Runtime.Serialization.DataMemberAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the DataMemberAttribute
+            class.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue">
+            <summary>
+            Gets or sets a value that specifies whether to serialize the default value
+            for a field or property being serialized.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.Serialization.DataMemberAttribute.IsRequired">
+            <summary>
+            Gets or sets a value that instructs the serialization engine that the member
+            must be present when reading or deserializing.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.Serialization.DataMemberAttribute.Name">
+            <summary>
+            Gets or sets a data member name.
+            </summary>
+        </member>
+        <member name="P:System.Runtime.Serialization.DataMemberAttribute.Order">
+            <summary>
+            Gets or sets the order of serialization and deserialization of a member.
+            </summary>
+        </member>
+    </members>
+</doc>
